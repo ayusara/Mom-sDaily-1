@@ -24,6 +24,18 @@
               jQuery('.camera_wrap').camera();
         });    
 	</script>		
+	<style type="text/css">
+	.auto-style2 {
+		color: rgb(192, 192, 192);
+	}
+	.auto-style3 {
+		color: #FF0000;
+	}
+	.auto-style4 {
+		margin: 29px 0 28px 0;
+		text-align: center;
+	}
+	</style>
 	<!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
  	<![endif]-->
@@ -118,15 +130,18 @@
     <div class="row">
       <div class="span12">        
         <ul class="thumbnails">
-          <li class="span3">
+          <li class="span3" style="width: 219px; height: 295px">
             <div class="thumbnail">
               <div class="caption">
-              	<img src="img/img-1.png" alt="">
+              	  <a href="data:image/jpeg;base64,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">
+              	<img alt=""></a>
                 <h5>Most</h5>
                 <h3>popular</h3>
               </div>  
               <div class="thumbnail-pad">
-                  <p>Praesent vestibulum molestie lacus. Aenean noy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>
+				  <span class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.2px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
+				  Stadion Utama Gelora Bung Karno (GBK), Jakarta sudah mulai 
+				  berbenah menyambut konser Bon Jovi.....<br><br></span>
                   <a href="#" class="btn btn_">more info</a>
               </div>
             </div>
@@ -139,8 +154,11 @@
                 <h3>Gifts</h3>
               </div>  
               <div class="thumbnail-pad">
-                  <p>Praesent vestibulum molestie lacus. Aenean my hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>
-                  <a href="#" class="btn btn_">more info</a>
+                  <p class="top-0">
+				  <span class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.2px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
+				  Siapa yang tak senang diberi hadiah? Apalagi, kado unik dan 
+				  penuh makna dari sosok yang disayangi.....</span></p>
+                  <a class="btn btn_" href="http://tabloidnova.com/Keluarga/Pasangan/Survei-Nova-10-Kado-Unik-Dan-Berkesan-Bagi-Perempuan">more info</a>
               </div>
             </div>
           </li>
@@ -152,8 +170,10 @@
                 <h3>to Detail</h3>
               </div>  
               <div class="thumbnail-pad">
-                  <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suipit varius mi. Cum sociis natoque penatibus et.</p>
-                  <a href="#" class="btn btn_">more info</a>
+				  <span class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.2px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
+				  Laporan Perilaku membantu Anda mengetahui bagaimana pengguna 
+				  berinteraksi dengan aplikasi Anda.....<br><br></span>
+				  <a class="btn btn_" href="https://support.google.com/analytics/answer/2568878?hl=id">more info</a>
               </div>
             </div>
           </li>
@@ -165,8 +185,9 @@
                 <h3>Fragrances</h3>
               </div>
               <div class="thumbnail-pad">  
-                  <p>Nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
-                  <a href="#" class="btn btn_">more info</a>
+                  <p class="auto-style2">Di zaman sekarang, umumnya kaum wanita 
+				  memiliki kesempatan yang luas untuk meraih cita-cita .....</p>
+                  <a class="btn btn_" href="http://female.kompas.com/read/2015/09/06/163616620/Tantangan.Berkarya.sebagai.Seniman.Wanita.di.Indonesia.">more info</a>
               </div>
             </div>
           </li>
@@ -176,21 +197,22 @@
     <div class="row">
     	<div class="span8">
         	<div class="clearfix cols-1">
-                <div class="span4 left-0">
+                <a href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVpdwj1n16sKYrIz3DlVCWNgVrzH3uXgy9lpke1kxQmuEPCzHL">
+                <div class="span4">
                     <h4 class="indent-2">Welcome</h4>
-                    <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. </p>
-                    <figure class="img-indent"><img src="img/page1-img1.jpg" alt="" class="img-radius"></figure>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. 
+                    Selamat datang di website Mom's Daily. Web ini kami persembahkan kepada semua ibu rumah tangga seperti kami yang selalu ingin tetap bisa update informasi tanpa meninggalkan rutintas semua ibu rumah tangga di rumah<figure class="auto-style4">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hvrUxkrnhQpG11FjRwNWVVJcvMhHXSqxSq4DqnJwen_s05S1"></figure>
+                    Dengan kemampuan kami yang terbatas, kami berusaha semaksimal mungkin menyajikan berbagai informasi buat ibu rumah tangga berdasarkan kebutuhan ibu rumah tangga pada umumnya. Happy Browsing Mum's.  
                 </div>
                 <div class="span4">
                     <h4 class="indent-2">What We Do</h4>
-                    <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. </p>
-                    <figure class="img-indent"><img src="img/page1-img2.jpg" alt="" class="img-radius"></figure>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. 
+                    Beberapa ibu rumah tangga yang memiliki latar belakang dan minat yang berbeda-beda dan dipertemukan dalam wadah CODER MUM'S yang di fasilitasi oleh Clevio.co.<figure class="auto-style4">
+						<img src="IMG-20150909-WA0074.jpg" alt="" class="img-radius" style="width: 130px; height: 160px"></figure>
+                    Sepanjang perjalanan berkumpulnya Coder Mum's kemudian muncul ide untuk membuat website bersama dengan berbagai minat yang di miliki smua coder mum's
                 </div>
             </div>
             <h4 class="indent-1">our Capabilities:</h4>
-            <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturien.</p>
+            <p class="lead">Kami Coder Mum's memiliki berbagai kemampuan yang berbeda berdasarkan minat dan bakat. Karna itu setia ibu mewakili masing-masing page yang berbeda.</p>
             <div class="lists">
             	<div class="span4 left-0">
                     <ul class="list">
@@ -215,24 +237,35 @@
         	<h4 class="indent-2">Latest News:</h4>
             <ul class="list-news">
             	<li>
-                	<a href="#" class="btn btn_">Apr 21, 2012</a>
-                    <p class="text-info">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. <a href="#" class="underline">>></a>
+                	<a href="#" class="btn btn_">Sept 12, 2015</a>
+                    <p class="text-info">Clevio dan di dukung oleh Microsoft mengadakan Student Workshop di Headquarter Mirosoft Indonesia, Bursa Efek Jakarta Towere 2, lantai 18.  
+					<a class="underline" href="http://www.clevio.co/camp/package/#pakethttp://www.clevio.co/camp/package/#paket">
+								>>></a>  
+                </li>
+                <li>
+                	<a href="http://health.liputan6.com/read/2296195/7-alasan-wanita-jepang-tak-akan-bisa-gemukhttp://health.liputan6.com/read/2296195/7-alasan-wanita-jepang-tak-akan-bisa-gemuk">
+						  <a href="#" class="btn btn_">Agst 18, 2015</a>
+                    <p class="text-info">7 Alasan Wanita Jepang Tak Akan Bisa Gemuk</p>
+                    Banyak wanita Indonesia mungkin keheranan karena melihat proporsi tubuh wanita Jepang yang kecil dan seolah tidak bisa gemuk. Padahal, bila dilihat dari kebiasaan makannya, tidak jauh berbeda dengan orang Asia kebanyakan...<a href="http://health.liputan6.com/read/2296195/7-alasan-wanita-jepang-tak-akan-bisa-gemuk">
+					<span class="underline">>>></span></a></a>
                 </li>
                 <li>
                 	<a href="#" class="btn btn_">Apr 21, 2012</a>
-                    <p class="text-info">Aenean nonummy hendrerit mauris</p>
-                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.  <a href="#" class="underline">>></a>
-                </li>
-                <li>
-                	<a href="#" class="btn btn_">Apr 21, 2012</a>
-                    <p class="text-info">Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturien.</p>
-                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.  <a href="#" class="underline">>></a>
+                    <p class="text-info">4 Gangguan Kesehatan yang Umum Dialami Wanita, Waspadalah.</p>
+                    Untuk menjaga kebugaran fisik serta kesehatannya, wanita 
+					membutuhkan nutrisi lengkap. Berdasarkan Indonesia Health 
+					Profile 2005 yang dilaporkan oleh Departemen Kesehatan RI, 
+					80 persen penderita osteoporosis dan anemia adalah wanita. 
+					Beberapa gangguan kesehatan yang umum dialami wanita, antara 
+					lain ....
+					<a class="underline" href="http://health.liputan6.com/read/2267557/4-gangguan-kesehatan-yang-umum-dialami-wanita-waspadalah">>></a>
                 </li>
             </ul>
             <h4 class="indent-1">testimonials:</h4>
-			<p class="p1">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada.”</p>
-            <span class="clr"><strong>Mark Priston</strong>, <a href="#" class="link-2">demolink.org</a></span>
+			<p class="p1">Web ini menjadi unik karena gabungan dari beberapa 
+			ide ibu-ibu yang tergabung dalam <span class="auto-style3"><strong>CODER MUM'S</strong></span>, dan sesuai dengan 
+			kebutuhan ibu rumah tangga masa kini.</p>
+            <span class="clr"><strong>Andgzia</strong>, Coach Clevio</span>
         </div>
     </div>        
   </div>
